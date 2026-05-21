@@ -264,6 +264,19 @@ export default function Home() {
         </div>
       </section>
 
+      {/* PHOTO STRIP */}
+      <div style={{display:'grid', gridTemplateColumns:'repeat(3, 1fr)', height:'420px'}}>
+        <div style={{overflow:'hidden'}}>
+          <img src="/images/IMG_1196.JPG" alt="MTB group ride through aspen forest" style={{width:'100%', height:'100%', objectFit:'cover', objectPosition:'center', display:'block'}}/>
+        </div>
+        <div style={{overflow:'hidden'}}>
+          <img src="/images/IMG_0710.JPG" alt="MTB club trip in Moab, Utah" style={{width:'100%', height:'100%', objectFit:'cover', objectPosition:'center top', display:'block'}}/>
+        </div>
+        <div style={{overflow:'hidden'}}>
+          <img src="/images/IMG_0405.JPG" alt="Snowmobiling in the Colorado mountains" style={{width:'100%', height:'100%', objectFit:'cover', objectPosition:'center', display:'block'}}/>
+        </div>
+      </div>
+
       {/* MTB CLUB */}
       <section id="mtb-club" style={{padding:'100px 60px', backgroundColor:'#0B1F3A'}}>
         <p style={{fontSize:'10px', fontWeight:'700', letterSpacing:'0.35em', textTransform:'uppercase', color:'#C9A84C', marginBottom:'16px'}}>CU Boulder Mountain Bike Club</p>
