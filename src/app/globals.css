@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 :root {
   --font-display: 'Playfair Display', serif;
   --font-body: 'DM Sans', sans-serif;
