@@ -67,6 +67,121 @@ export default function Home() {
         </div>
       </section>
 
+      {/* WORK EXPERIENCE */}
+      <section id="experience" style={{padding:'100px 60px', backgroundColor:'#0B1F3A'}}>
+        <p style={{fontSize:'10px', fontWeight:'700', letterSpacing:'0.35em', textTransform:'uppercase', color:'#C9A84C', marginBottom:'16px'}}>Experience</p>
+        <h2 style={{fontFamily:'Georgia, serif', fontSize:'52px', fontWeight:'700', marginBottom:'60px'}}>Work & Professional Experience</h2>
+
+        {/* FEATURED — Peak 10 Group */}
+        <div style={{border:'1px solid rgba(201,168,76,0.4)', backgroundColor:'rgba(201,168,76,0.03)', padding:'48px', marginBottom:'2px'}}>
+          <div style={{marginBottom:'28px'}}>
+            <span style={{display:'inline-block', fontSize:'9px', fontWeight:'700', letterSpacing:'0.25em', textTransform:'uppercase', color:'#0B1F3A', backgroundColor:'#C9A84C', padding:'5px 14px', marginBottom:'18px'}}>Current Position</span>
+            <h3 style={{fontFamily:'Georgia, serif', fontSize:'26px', fontWeight:'700', color:'#ffffff', marginBottom:'6px'}}>Peak 10 Group</h3>
+            <p style={{fontSize:'11px', color:'rgba(255,255,255,0.35)', letterSpacing:'0.12em', textTransform:'uppercase'}}>Operations & Business Development · Columbus, OH · Summer 2026</p>
+          </div>
+          <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'14px 48px'}}>
+            {[
+              'Embedded within a commercial real estate company and affiliated pest control operation — contributing to live business operations across both.',
+              'Leading a CRM overhaul for the pest control business, restructuring how customers, jobs, and follow-ups are tracked to improve operational efficiency.',
+              'Built and deployed OpenClawBot — a personal AI agent running on a DigitalOcean server with a Discord interface — to automate workflows and reduce manual overhead.',
+              'Using Claude as a research and drafting tool to accelerate decision-making and improve output quality across business tasks.',
+              'Expanding into CRE deal flow and property operations as the summer progresses — gaining direct exposure to commercial real estate from the inside.',
+            ].map((b, i) => (
+              <div key={i} style={{display:'flex', gap:'14px'}}>
+                <span style={{color:'#C9A84C', flexShrink:0, marginTop:'3px', fontSize:'14px'}}>—</span>
+                <p style={{fontSize:'14px', color:'rgba(255,255,255,0.55)', lineHeight:'1.75', margin:0}}>{b}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Pacific Pools + Vail Resorts */}
+        <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'2px', marginBottom:'2px'}}>
+          {[
+            {
+              company: 'Pacific Pools & Spas',
+              role: 'Pool Service Technician · Columbus, OH',
+              period: 'Summer 2025',
+              badge: 'Full-Time',
+              bullets: [
+                'Managed an independent daily route of ~10 residential and commercial pools across the Columbus, OH area.',
+                'Conducted chemical testing and analysis using PoolBrain software; made on-site treatment decisions based on water chemistry and equipment condition.',
+                'Operated company vehicles solo and maintained accurate service records across all stops.',
+                'Full-time hours with minimal oversight — responsible for my own schedule and completing all work to standard.',
+              ],
+            },
+            {
+              company: 'Vail Resorts — Mad River Mountain',
+              role: 'Junior Ski Racing Instructor · Ohio',
+              period: 'Dec 2023 – Mar 2024',
+              badge: 'Part-Time',
+              bullets: [
+                'Supported the Mad River junior alpine ski racing program as a part-time instructor.',
+                'Managed course setup and teardown, and provided real-time safety monitoring during races.',
+                'Worked closely with coaching staff and athletes on logistics and on-hill supervision.',
+                'Certified ski instructor through Vail Resorts.',
+              ],
+            },
+          ].map((job) => (
+            <div key={job.company} style={{backgroundColor:'#0f2847', padding:'40px'}}>
+              <span style={{display:'inline-block', fontSize:'9px', fontWeight:'700', letterSpacing:'0.2em', textTransform:'uppercase', color:'rgba(255,255,255,0.35)', border:'1px solid rgba(255,255,255,0.1)', padding:'4px 10px', marginBottom:'18px'}}>{job.badge}</span>
+              <h3 style={{fontFamily:'Georgia, serif', fontSize:'22px', fontWeight:'700', color:'#ffffff', marginBottom:'6px'}}>{job.company}</h3>
+              <p style={{fontSize:'11px', color:'rgba(255,255,255,0.3)', letterSpacing:'0.12em', textTransform:'uppercase', marginBottom:'24px'}}>{job.role} · {job.period}</p>
+              <div style={{display:'flex', flexDirection:'column', gap:'10px'}}>
+                {job.bullets.map((b, i) => (
+                  <div key={i} style={{display:'flex', gap:'12px'}}>
+                    <span style={{color:'#C9A84C', flexShrink:0, marginTop:'3px', fontSize:'13px'}}>—</span>
+                    <p style={{fontSize:'13px', color:'rgba(255,255,255,0.5)', lineHeight:'1.7', margin:0}}>{b}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Bike Mechanic + Granddad's Pizza */}
+        <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'2px'}}>
+          {[
+            {
+              company: 'Self-Employed Bicycle Mechanic',
+              role: 'Founder & Operator · Grandview Heights, OH',
+              period: 'Jul 2020 – Jun 2023',
+              badge: 'Part-Time · Self-Employed',
+              bullets: [
+                'Founded and operated an independent at-home bicycle repair and maintenance service — first business, started at age 14.',
+                'Generated customers through targeted Facebook marketing and managed all aspects of the business independently.',
+                'Handled customer communication, service quoting, quality control, and delivery.',
+              ],
+            },
+            {
+              company: "Granddad's Pizza",
+              role: 'Kitchen & Front-of-House · Columbus, OH',
+              period: 'May 2022 – Sep 2022',
+              badge: 'Part-Time',
+              bullets: [
+                'Worked high-volume weekend shifts across pizza prep, dishwashing, and kitchen cleaning.',
+                'Handled phone orders and cash register operation in a fast-paced environment.',
+                'Gained experience managing multiple simultaneous responsibilities under time pressure.',
+              ],
+            },
+          ].map((job) => (
+            <div key={job.company} style={{backgroundColor:'rgba(15,40,71,0.5)', padding:'40px', borderTop:'1px solid rgba(255,255,255,0.04)'}}>
+              <span style={{display:'inline-block', fontSize:'9px', fontWeight:'700', letterSpacing:'0.2em', textTransform:'uppercase', color:'rgba(255,255,255,0.25)', border:'1px solid rgba(255,255,255,0.07)', padding:'4px 10px', marginBottom:'18px'}}>{job.badge}</span>
+              <h3 style={{fontFamily:'Georgia, serif', fontSize:'20px', fontWeight:'700', color:'rgba(255,255,255,0.65)', marginBottom:'6px'}}>{job.company}</h3>
+              <p style={{fontSize:'11px', color:'rgba(255,255,255,0.25)', letterSpacing:'0.12em', textTransform:'uppercase', marginBottom:'20px'}}>{job.role} · {job.period}</p>
+              <div style={{display:'flex', flexDirection:'column', gap:'10px'}}>
+                {job.bullets.map((b, i) => (
+                  <div key={i} style={{display:'flex', gap:'12px'}}>
+                    <span style={{color:'rgba(201,168,76,0.45)', flexShrink:0, marginTop:'3px', fontSize:'13px'}}>—</span>
+                    <p style={{fontSize:'13px', color:'rgba(255,255,255,0.38)', lineHeight:'1.7', margin:0}}>{b}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* HIGHLIGHTS */}
       <section id="highlights" style={{padding:'100px 60px', backgroundColor:'#0B1F3A'}}>
         <p style={{fontSize:'10px', fontWeight:'700', letterSpacing:'0.35em', textTransform:'uppercase', color:'#C9A84C', marginBottom:'16px'}}>Highlights</p>
