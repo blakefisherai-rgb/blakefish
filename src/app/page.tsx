@@ -258,8 +258,83 @@ export default function Home() {
         </div>
       </section>
 
+      {/* MTB CLUB */}
+      <section id="mtb-club" style={{padding:'100px 60px', backgroundColor:'#0B1F3A'}}>
+        <p style={{fontSize:'10px', fontWeight:'700', letterSpacing:'0.35em', textTransform:'uppercase', color:'#C9A84C', marginBottom:'16px'}}>CU Boulder Mountain Bike Club</p>
+
+        {/* Intro */}
+        <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'80px', alignItems:'start', marginBottom:'64px'}}>
+          <div>
+            <h2 style={{fontFamily:'Georgia, serif', fontSize:'52px', lineHeight:'1.05', fontWeight:'700', marginBottom:'32px'}}>Leadership in the sport I <span style={{color:'#C9A84C'}}>love most.</span></h2>
+            <div style={{display:'flex', gap:'0', alignItems:'stretch'}}>
+              <div style={{padding:'14px 20px', border:'1px solid rgba(255,255,255,0.1)', fontSize:'11px', color:'rgba(255,255,255,0.4)', letterSpacing:'0.1em', textTransform:'uppercase'}}>Social Chairman</div>
+              <div style={{padding:'14px 16px', display:'flex', alignItems:'center', color:'#C9A84C', fontSize:'16px'}}>→</div>
+              <div style={{padding:'14px 20px', border:'1px solid rgba(201,168,76,0.5)', fontSize:'11px', color:'#C9A84C', letterSpacing:'0.1em', textTransform:'uppercase', fontWeight:'700'}}>Trip Planner · Current</div>
+            </div>
+          </div>
+          <div style={{display:'flex', flexDirection:'column', gap:'20px'}}>
+            <p style={{fontSize:'16px', color:'rgba(255,255,255,0.6)', lineHeight:'1.85', margin:0}}>
+              As a board member of the CU Boulder Mountain Bike Club, I've served as Social Chairman and now lead all trip planning for one of the most active outdoor clubs on campus. The role combines logistics, community building, and real leadership — coordinating overnight trips, organizing group rides, and running beginner skills clinics for new members.
+            </p>
+            <p style={{fontSize:'16px', color:'rgba(255,255,255,0.6)', lineHeight:'1.85', margin:0}}>
+              It's also taught me how to work effectively with a team that doesn't always agree — navigating board disagreements, aligning on decisions, and keeping things moving. The same skills that make a good trip planner make a good operator.
+            </p>
+          </div>
+        </div>
+
+        {/* Overnight trips */}
+        <p style={{fontSize:'9px', fontWeight:'700', letterSpacing:'0.3em', textTransform:'uppercase', color:'rgba(255,255,255,0.25)', marginBottom:'12px'}}>Overnight Trips Led</p>
+        <div style={{display:'grid', gridTemplateColumns:'2fr 1fr 1fr', gap:'2px', marginBottom:'2px'}}>
+          {/* Moab — featured */}
+          <div style={{border:'1px solid rgba(201,168,76,0.35)', backgroundColor:'rgba(201,168,76,0.03)', padding:'44px'}}>
+            <span style={{display:'inline-block', fontSize:'9px', fontWeight:'700', letterSpacing:'0.25em', textTransform:'uppercase', color:'#0B1F3A', backgroundColor:'#C9A84C', padding:'5px 12px', marginBottom:'24px'}}>Flagship Trip</span>
+            <h3 style={{fontFamily:'Georgia, serif', fontSize:'32px', fontWeight:'700', color:'#ffffff', marginBottom:'4px'}}>Moab, Utah</h3>
+            <p style={{fontSize:'11px', color:'rgba(255,255,255,0.3)', textTransform:'uppercase', letterSpacing:'0.12em', marginBottom:'28px'}}>Multi-Day Overnight · Slickrock Country</p>
+            <div style={{display:'flex', alignItems:'baseline', gap:'10px', marginBottom:'20px'}}>
+              <span style={{fontFamily:'Georgia, serif', fontSize:'52px', fontWeight:'700', color:'#C9A84C', lineHeight:'1'}}>60</span>
+              <span style={{fontSize:'11px', color:'rgba(255,255,255,0.4)', textTransform:'uppercase', letterSpacing:'0.15em'}}>Attendees</span>
+            </div>
+            <p style={{fontSize:'14px', color:'rgba(255,255,255,0.5)', lineHeight:'1.75', margin:0}}>
+              Our biggest annual trip — coordinating travel, accommodation, and daily rides for 60 riders across the world-class trails of Moab. Managing group logistics at that scale means something always needs solving on the fly.
+            </p>
+          </div>
+          {/* Crested Butte */}
+          <div style={{backgroundColor:'#0f2847', padding:'40px'}}>
+            <h3 style={{fontFamily:'Georgia, serif', fontSize:'22px', fontWeight:'700', color:'#ffffff', marginBottom:'4px'}}>Crested Butte</h3>
+            <p style={{fontSize:'11px', color:'rgba(255,255,255,0.3)', textTransform:'uppercase', letterSpacing:'0.12em', marginBottom:'24px'}}>Colorado · Overnight</p>
+            <p style={{fontSize:'13px', color:'rgba(255,255,255,0.5)', lineHeight:'1.75', margin:0}}>
+              Helped lead an overnight trip to one of Colorado's most iconic mountain biking destinations — handling logistics, route planning, and on-trail leadership for club members.
+            </p>
+          </div>
+          {/* Winter Park */}
+          <div style={{backgroundColor:'#0f2847', padding:'40px'}}>
+            <h3 style={{fontFamily:'Georgia, serif', fontSize:'22px', fontWeight:'700', color:'#ffffff', marginBottom:'4px'}}>Winter Park</h3>
+            <p style={{fontSize:'11px', color:'rgba(255,255,255,0.3)', textTransform:'uppercase', letterSpacing:'0.12em', marginBottom:'24px'}}>Colorado · Overnight</p>
+            <p style={{fontSize:'13px', color:'rgba(255,255,255,0.5)', lineHeight:'1.75', margin:0}}>
+              Coordinated the overnight trip to Winter Park Resort — managing travel, lodging, and trail planning from start to finish for the group.
+            </p>
+          </div>
+        </div>
+
+        {/* What it's built */}
+        <div style={{display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:'2px'}}>
+          {[
+            {icon:'🗓️', label:'Event Planning', body:'Coordinating overnight trips for up to 60 people means handling every detail — travel, lodging, routes, timing, and contingencies. Nothing happens without a plan and someone to own it.'},
+            {icon:'📣', label:'Promotion & Recruitment', body:'As Social Chairman, growing and engaging the club required reaching new members, creating interest, and keeping the community active — skills that transfer directly to any marketing or business development role.'},
+            {icon:'🤝', label:'Team Building', body:'Working on a board means getting alignment from people with different priorities. Building trust, running group rides, and coaching beginners all come back to the same thing: making people feel like they belong.'},
+            {icon:'⚖️', label:'Conflict Resolution', body:'Not every board decision is unanimous. Learning to navigate disagreements, find common ground, and keep the team moving forward without burning relationships is one of the most underrated skills you can build early.'},
+          ].map((tile) => (
+            <div key={tile.label} style={{backgroundColor:'rgba(15,40,71,0.6)', padding:'36px 28px', borderTop:'2px solid rgba(201,168,76,0.2)'}}>
+              <div style={{fontSize:'26px', marginBottom:'16px'}}>{tile.icon}</div>
+              <div style={{fontSize:'10px', fontWeight:'700', letterSpacing:'0.25em', textTransform:'uppercase', color:'#C9A84C', marginBottom:'14px'}}>{tile.label}</div>
+              <p style={{fontSize:'13px', color:'rgba(255,255,255,0.5)', lineHeight:'1.75', margin:0}}>{tile.body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* CTA */}
-      <section id="contact" style={{padding:'100px 60px', backgroundColor:'#0B1F3A', display:'grid', gridTemplateColumns:'1fr 1fr', gap:'80px', alignItems:'center'}}>
+      <section id="contact" style={{padding:'100px 60px', backgroundColor:'#0f2847', display:'grid', gridTemplateColumns:'1fr 1fr', gap:'80px', alignItems:'center'}}>
         <div>
           <p style={{fontSize:'10px', fontWeight:'700', letterSpacing:'0.35em', textTransform:'uppercase', color:'#C9A84C', marginBottom:'16px'}}>Let's Connect</p>
           <h2 style={{fontFamily:'Georgia, serif', fontSize:'52px', fontWeight:'700', lineHeight:'1.05'}}>Early in my career.<br/><span style={{color:'#C9A84C'}}>Not early</span> in my work ethic.</h2>
