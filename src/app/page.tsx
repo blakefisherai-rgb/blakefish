@@ -295,7 +295,7 @@ export default function Home() {
               <span style={{fontSize:'11px', color:'rgba(255,255,255,0.4)', textTransform:'uppercase', letterSpacing:'0.15em'}}>Attendees</span>
             </div>
             <p style={{fontSize:'14px', color:'rgba(255,255,255,0.5)', lineHeight:'1.75', margin:0}}>
-              Our biggest annual trip — coordinating travel, accommodation, and daily rides for 60 riders across the world-class trails of Moab. Managing group logistics at that scale means something always needs solving on the fly.
+              Our biggest annual trip — coordinating travel, camping, and daily rides for 60 riders across the world-class trails of Moab. Managing group logistics at that scale means something always needs solving on the fly.
             </p>
           </div>
           {/* Crested Butte */}
@@ -311,7 +311,7 @@ export default function Home() {
             <h3 style={{fontFamily:'Georgia, serif', fontSize:'22px', fontWeight:'700', color:'#ffffff', marginBottom:'4px'}}>Winter Park</h3>
             <p style={{fontSize:'11px', color:'rgba(255,255,255,0.3)', textTransform:'uppercase', letterSpacing:'0.12em', marginBottom:'24px'}}>Colorado · Overnight</p>
             <p style={{fontSize:'13px', color:'rgba(255,255,255,0.5)', lineHeight:'1.75', margin:0}}>
-              Coordinated the overnight trip to Winter Park Resort — managing travel, lodging, and trail planning from start to finish for the group.
+              Coordinated the overnight trip to Winter Park Resort — managing travel, campsite setup, and trail planning from start to finish for the group.
             </p>
           </div>
         </div>
@@ -319,7 +319,7 @@ export default function Home() {
         {/* What it's built */}
         <div style={{display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:'2px'}}>
           {[
-            {icon:'🗓️', label:'Event Planning', body:'Coordinating overnight trips for up to 60 people means handling every detail — travel, lodging, routes, timing, and contingencies. Nothing happens without a plan and someone to own it.'},
+            {icon:'🗓️', label:'Event Planning', body:'Coordinating overnight camping trips for up to 60 people means handling every detail — travel, campsites, routes, timing, and contingencies. Nothing happens without a plan and someone to own it.'},
             {icon:'📣', label:'Promotion & Recruitment', body:'As Social Chairman, growing and engaging the club required reaching new members, creating interest, and keeping the community active — skills that transfer directly to any marketing or business development role.'},
             {icon:'🤝', label:'Team Building', body:'Working on a board means getting alignment from people with different priorities. Building trust, running group rides, and coaching beginners all come back to the same thing: making people feel like they belong.'},
             {icon:'⚖️', label:'Conflict Resolution', body:'Not every board decision is unanimous. Learning to navigate disagreements, find common ground, and keep the team moving forward without burning relationships is one of the most underrated skills you can build early.'},
