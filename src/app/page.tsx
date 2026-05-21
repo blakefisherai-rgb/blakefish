@@ -271,7 +271,7 @@ export default function Home() {
       </section>
 
       {/* PHOTO STRIP */}
-      <div style={{display:'grid', gridTemplateColumns:'repeat(4, 1fr)', height:'380px'}}>
+      <div style={{display:'grid', gridTemplateColumns:'repeat(3, 1fr)', height:'420px'}}>
         <div style={{overflow:'hidden'}}>
           <img src="/images/IMG_1196.JPG" alt="MTB group ride through aspen forest" style={{width:'100%', height:'100%', objectFit:'cover', objectPosition:'center', display:'block'}}/>
         </div>
@@ -280,9 +280,6 @@ export default function Home() {
         </div>
         <div style={{overflow:'hidden'}}>
           <img src="/images/IMG_7275.jpg" alt="MTB group at Winter Park" style={{width:'100%', height:'100%', objectFit:'cover', objectPosition:'center', display:'block'}}/>
-        </div>
-        <div style={{overflow:'hidden'}}>
-          <img src="/images/IMG_0405.JPG" alt="Snowmobiling in the Colorado mountains" style={{width:'100%', height:'100%', objectFit:'cover', objectPosition:'center', display:'block'}}/>
         </div>
       </div>
 
