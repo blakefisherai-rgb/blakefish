@@ -6,10 +6,12 @@ export default function Home() {
       <nav style={{position:'fixed', top:0, width:'100%', zIndex:100, backgroundColor:'#0B1F3A', borderBottom:'2px solid #C9A84C', padding:'0 60px', display:'flex', justifyContent:'space-between', alignItems:'center', height:'72px'}}>
         <a href="#" style={{fontFamily:'Georgia, serif', fontSize:'22px', fontWeight:'700', color:'#ffffff', textDecoration:'none'}}>Blake <span style={{color:'#C9A84C'}}>Fisher</span></a>
         <div style={{display:'flex', gap:'36px', alignItems:'center'}}>
-          <a href="#about" style={{fontSize:'11px', fontWeight:'700', letterSpacing:'0.18em', textTransform:'uppercase', color:'rgba(255,255,255,0.45)', textDecoration:'none'}}>About</a>
-          <a href="#experience" style={{fontSize:'11px', fontWeight:'700', letterSpacing:'0.18em', textTransform:'uppercase', color:'rgba(255,255,255,0.45)', textDecoration:'none'}}>Experience</a>
-          <a href="#racing" style={{fontSize:'11px', fontWeight:'700', letterSpacing:'0.18em', textTransform:'uppercase', color:'rgba(255,255,255,0.45)', textDecoration:'none'}}>MTB & Racing</a>
-          <a href="#mtb-club" style={{fontSize:'11px', fontWeight:'700', letterSpacing:'0.18em', textTransform:'uppercase', color:'rgba(255,255,255,0.45)', textDecoration:'none'}}>Club</a>
+          <div className="nav-links" style={{display:'flex', gap:'36px', alignItems:'center'}}>
+            <a href="#about" style={{fontSize:'11px', fontWeight:'700', letterSpacing:'0.18em', textTransform:'uppercase', color:'rgba(255,255,255,0.45)', textDecoration:'none'}}>About</a>
+            <a href="#experience" style={{fontSize:'11px', fontWeight:'700', letterSpacing:'0.18em', textTransform:'uppercase', color:'rgba(255,255,255,0.45)', textDecoration:'none'}}>Experience</a>
+            <a href="#racing" style={{fontSize:'11px', fontWeight:'700', letterSpacing:'0.18em', textTransform:'uppercase', color:'rgba(255,255,255,0.45)', textDecoration:'none'}}>MTB & Racing</a>
+            <a href="#mtb-club" style={{fontSize:'11px', fontWeight:'700', letterSpacing:'0.18em', textTransform:'uppercase', color:'rgba(255,255,255,0.45)', textDecoration:'none'}}>Club</a>
+          </div>
           <a href="#contact" style={{fontSize:'11px', fontWeight:'700', letterSpacing:'0.2em', textTransform:'uppercase', backgroundColor:'#C9A84C', color:'#0B1F3A', padding:'10px 24px', textDecoration:'none'}}>Connect</a>
         </div>
       </nav>

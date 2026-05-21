@@ -55,3 +55,10 @@ p, li, span, div {
 .text-muted {
   color: rgba(255, 255, 255, 0.55) !important;
 }
+
+/* Nav responsive — hide section links on small screens */
+@media (max-width: 860px) {
+  .nav-links {
+    display: none !important;
+  }
+}
