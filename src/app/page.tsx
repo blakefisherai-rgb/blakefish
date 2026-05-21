@@ -206,8 +206,60 @@ export default function Home() {
         </div>
       </section>
 
+      {/* MOUNTAIN BIKING & RACING */}
+      <section id="racing" style={{padding:'100px 60px', backgroundColor:'#0f2847'}}>
+        <p style={{fontSize:'10px', fontWeight:'700', letterSpacing:'0.35em', textTransform:'uppercase', color:'#C9A84C', marginBottom:'16px'}}>Mountain Biking & Racing</p>
+
+        {/* Headline + intro */}
+        <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'80px', alignItems:'start', marginBottom:'72px'}}>
+          <div>
+            <h2 style={{fontFamily:'Georgia, serif', fontSize:'52px', lineHeight:'1.05', fontWeight:'700', marginBottom:'0'}}>The thing I'm most <span style={{color:'#C9A84C'}}>passionate about.</span></h2>
+          </div>
+          <div style={{display:'flex', flexDirection:'column', gap:'20px'}}>
+            <p style={{fontSize:'16px', color:'rgba(255,255,255,0.6)', lineHeight:'1.85', margin:0}}>
+              Mountain biking isn't just something I do — it's how I think. From the first time I hit a trail to competing at the regional level, riding has been the constant thread through every phase of my life. It's taken me to the best places I've ever been, introduced me to some of my closest friends, and given me something I could share with my family — teaching them to ride and building memories in the mountains together.
+            </p>
+            <p style={{fontSize:'16px', color:'rgba(255,255,255,0.6)', lineHeight:'1.85', margin:0}}>
+              Racing sharpened everything. Starting in the lowest categories and working up through the field taught me that progress doesn't happen by accident — it takes showing up consistently, learning from every mistake, and adapting to whatever the course throws at you. Some of the most demanding days of my life have been on a bike. That's not just good training for racing. It's good training for everything.
+            </p>
+          </div>
+        </div>
+
+        {/* Four lesson tiles */}
+        <div style={{display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:'2px'}}>
+          {[
+            {
+              label: 'Adaptability',
+              icon: '⚡',
+              body: 'No two trails are the same — and no two race days are either. Racing demanded constant adaptation: to new terrain, changing conditions, mechanicals, and moments when the plan falls apart mid-descent. Learning to read a situation and respond instead of panic is a skill that transfers everywhere.',
+            },
+            {
+              label: 'Mental Strength',
+              icon: '🧠',
+              body: 'Some of the longest, hardest days of my life have been on a bike. Enduro racing demands sustained effort over brutal terrain — hours of climbing followed by timed descents where your legs and your focus both have to show up. Building the capacity to push through discomfort is something I carry into everything else.',
+            },
+            {
+              label: 'Progression',
+              icon: '📈',
+              body: 'I started in the lowest racing categories and worked my way up to competing at the regional level. That process — learning the fundamentals, identifying weaknesses, and improving through repetition — is the same approach I bring to any new skill or challenge. You start where you are and you keep going.',
+            },
+            {
+              label: 'Community & Family',
+              icon: '🤝',
+              body: 'Mountain biking has taken me to places I\'d never have seen otherwise and introduced me to some of my best friends. It\'s also something I\'ve been able to share with my family — teaching them to ride, watching them fall in love with it too. That side of it matters just as much as the racing.',
+            },
+          ].map((tile) => (
+            <div key={tile.label} style={{backgroundColor:'rgba(11,31,58,0.8)', padding:'36px 28px', borderTop:'2px solid rgba(201,168,76,0.25)'}}>
+              <div style={{fontSize:'26px', marginBottom:'16px'}}>{tile.icon}</div>
+              <div style={{fontSize:'10px', fontWeight:'700', letterSpacing:'0.25em', textTransform:'uppercase', color:'#C9A84C', marginBottom:'14px'}}>{tile.label}</div>
+              <p style={{fontSize:'13px', color:'rgba(255,255,255,0.5)', lineHeight:'1.75', margin:0}}>{tile.body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* CTA */}
-      <section id="contact" style={{padding:'100px 60px', backgroundColor:'#0f2847', display:'grid', gridTemplateColumns:'1fr 1fr', gap:'80px', alignItems:'center'}}>
+      <section id="contact" style={{padding:'100px 60px', backgroundColor:'#0B1F3A', display:'grid', gridTemplateColumns:'1fr 1fr', gap:'80px', alignItems:'center'}}>
         <div>
           <p style={{fontSize:'10px', fontWeight:'700', letterSpacing:'0.35em', textTransform:'uppercase', color:'#C9A84C', marginBottom:'16px'}}>Let's Connect</p>
           <h2 style={{fontFamily:'Georgia, serif', fontSize:'52px', fontWeight:'700', lineHeight:'1.05'}}>Early in my career.<br/><span style={{color:'#C9A84C'}}>Not early</span> in my work ethic.</h2>
