@@ -233,8 +233,8 @@ export default function Home() {
             <div style={{height:'320px', overflow:'hidden'}}>
               <img src="/images/blake-race-action.jpg" alt="Blake Fisher racing at Snowshoe Bike Park" style={{width:'100%', height:'100%', objectFit:'cover', objectPosition:'center top', display:'block'}}/>
             </div>
-            <div style={{position:'relative', height:'420px', overflow:'hidden'}}>
-              <img src="/images/IMG_0965.jpg" alt="Blake Fisher — 1st place podium at Winter Park" style={{width:'100%', height:'100%', objectFit:'cover', objectPosition:'center 68%', display:'block'}}/>
+            <div style={{position:'relative', height:'420px', overflow:'hidden', backgroundColor:'#0B1F3A'}}>
+              <img src="/images/IMG_0965.jpg" alt="Blake Fisher — 1st place podium at Winter Park" style={{width:'100%', height:'100%', objectFit:'contain', objectPosition:'center', display:'block'}}/>
               <div style={{position:'absolute', bottom:0, left:0, right:0, padding:'14px 20px', backgroundColor:'rgba(11,31,58,0.85)'}}>
                 <p style={{margin:0, fontSize:'10px', fontWeight:'700', letterSpacing:'0.2em', textTransform:'uppercase', color:'#C9A84C'}}>1st Place · Winter Park · Enduro</p>
               </div>
