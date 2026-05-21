@@ -218,16 +218,22 @@ export default function Home() {
 
         {/* Headline + intro */}
         <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'80px', alignItems:'start', marginBottom:'72px'}}>
-          <div>
+          <div style={{display:'flex', flexDirection:'column', gap:'28px'}}>
             <h2 style={{fontFamily:'Georgia, serif', fontSize:'52px', lineHeight:'1.05', fontWeight:'700', marginBottom:'0'}}>The thing I'm most <span style={{color:'#C9A84C'}}>passionate about.</span></h2>
-          </div>
-          <div style={{display:'flex', flexDirection:'column', gap:'20px'}}>
             <p style={{fontSize:'16px', color:'rgba(255,255,255,0.6)', lineHeight:'1.85', margin:0}}>
               Mountain biking isn't just something I do — it's how I think. From the first time I hit a trail to competing at the regional level, riding has been the constant thread through every phase of my life. It's taken me to the best places I've ever been, introduced me to some of my closest friends, and given me something I could share with my family — teaching them to ride and building memories in the mountains together.
             </p>
             <p style={{fontSize:'16px', color:'rgba(255,255,255,0.6)', lineHeight:'1.85', margin:0}}>
               Racing sharpened everything. Starting in the lowest categories and working up through the field taught me that progress doesn't happen by accident — it takes showing up consistently, learning from every mistake, and adapting to whatever the course throws at you. Some of the most demanding days of my life have been on a bike. That's not just good training for racing. It's good training for everything.
             </p>
+          </div>
+          <div style={{position:'relative'}}>
+            <div style={{position:'absolute', top:'-10px', right:'-10px', width:'60px', height:'60px', borderTop:'2px solid #C9A84C', borderRight:'2px solid #C9A84C'}}></div>
+            <div style={{position:'absolute', bottom:'-10px', left:'-10px', width:'60px', height:'60px', borderBottom:'2px solid #C9A84C', borderLeft:'2px solid #C9A84C'}}></div>
+            <img src="/images/IMG_0965.jpg" alt="Blake Fisher — 1st place podium at Winter Park" style={{width:'100%', display:'block', objectFit:'cover', aspectRatio:'3/4'}}/>
+            <div style={{position:'absolute', bottom:0, left:0, right:0, padding:'16px 20px', backgroundColor:'rgba(11,31,58,0.85)'}}>
+              <p style={{margin:0, fontSize:'10px', fontWeight:'700', letterSpacing:'0.2em', textTransform:'uppercase', color:'#C9A84C'}}>1st Place · Winter Park · Downhill</p>
+            </div>
           </div>
         </div>
 
@@ -265,12 +271,15 @@ export default function Home() {
       </section>
 
       {/* PHOTO STRIP */}
-      <div style={{display:'grid', gridTemplateColumns:'repeat(3, 1fr)', height:'420px'}}>
+      <div style={{display:'grid', gridTemplateColumns:'repeat(4, 1fr)', height:'380px'}}>
         <div style={{overflow:'hidden'}}>
           <img src="/images/IMG_1196.JPG" alt="MTB group ride through aspen forest" style={{width:'100%', height:'100%', objectFit:'cover', objectPosition:'center', display:'block'}}/>
         </div>
         <div style={{overflow:'hidden'}}>
           <img src="/images/IMG_0710.JPG" alt="MTB club trip in Moab, Utah" style={{width:'100%', height:'100%', objectFit:'cover', objectPosition:'center top', display:'block'}}/>
+        </div>
+        <div style={{overflow:'hidden'}}>
+          <img src="/images/IMG_7275.jpg" alt="MTB group at Winter Park" style={{width:'100%', height:'100%', objectFit:'cover', objectPosition:'center', display:'block'}}/>
         </div>
         <div style={{overflow:'hidden'}}>
           <img src="/images/IMG_0405.JPG" alt="Snowmobiling in the Colorado mountains" style={{width:'100%', height:'100%', objectFit:'cover', objectPosition:'center', display:'block'}}/>
