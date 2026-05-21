@@ -227,12 +227,16 @@ export default function Home() {
               Racing sharpened everything. Starting in the lowest categories and working up through the field taught me that progress doesn't happen by accident — it takes showing up consistently, learning from every mistake, and adapting to whatever the course throws at you. Some of the most demanding days of my life have been on a bike. That's not just good training for racing. It's good training for everything.
             </p>
           </div>
-          <div style={{position:'relative'}}>
-            <div style={{position:'absolute', top:'-10px', right:'-10px', width:'60px', height:'60px', borderTop:'2px solid #C9A84C', borderRight:'2px solid #C9A84C'}}></div>
-            <div style={{position:'absolute', bottom:'-10px', left:'-10px', width:'60px', height:'60px', borderBottom:'2px solid #C9A84C', borderLeft:'2px solid #C9A84C'}}></div>
-            <img src="/images/IMG_0965.jpg" alt="Blake Fisher — 1st place podium at Winter Park" style={{width:'100%', display:'block', objectFit:'cover', aspectRatio:'3/4'}}/>
-            <div style={{position:'absolute', bottom:0, left:0, right:0, padding:'16px 20px', backgroundColor:'rgba(11,31,58,0.85)'}}>
-              <p style={{margin:0, fontSize:'10px', fontWeight:'700', letterSpacing:'0.2em', textTransform:'uppercase', color:'#C9A84C'}}>1st Place · Winter Park · Downhill</p>
+          <div style={{display:'flex', flexDirection:'column', gap:'2px'}}>
+            <div style={{overflow:'hidden'}}>
+              <img src="/images/blake-race-action.jpg" alt="Blake Fisher racing downhill at Snowshoe Bike Park" style={{width:'100%', display:'block', objectFit:'cover', height:'280px', objectPosition:'center 30%'}}/>
+            </div>
+            <div style={{position:'relative'}}>
+              <div style={{position:'absolute', top:'-10px', right:'-10px', width:'48px', height:'48px', borderTop:'2px solid #C9A84C', borderRight:'2px solid #C9A84C', zIndex:1}}></div>
+              <img src="/images/IMG_0965.jpg" alt="Blake Fisher — 1st place podium at Winter Park" style={{width:'100%', display:'block', objectFit:'cover', height:'320px', objectPosition:'center top'}}/>
+              <div style={{position:'absolute', bottom:0, left:0, right:0, padding:'14px 20px', backgroundColor:'rgba(11,31,58,0.85)'}}>
+                <p style={{margin:0, fontSize:'10px', fontWeight:'700', letterSpacing:'0.2em', textTransform:'uppercase', color:'#C9A84C'}}>1st Place · Winter Park · Downhill</p>
+              </div>
             </div>
           </div>
         </div>
