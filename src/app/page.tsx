@@ -230,8 +230,8 @@ export default function Home() {
             </p>
           </div>
           <div style={{display:'flex', flexDirection:'column', gap:'2px'}}>
-            <div style={{width:'100%', aspectRatio:'3/2', overflow:'hidden'}}>
-              <img src="/images/blake-race-action.jpg" alt="Blake Fisher racing at Snowshoe Bike Park" style={{width:'100%', height:'100%', objectFit:'cover', objectPosition:'center', display:'block'}}/>
+            <div style={{width:'100%', aspectRatio:'16/9', overflow:'hidden'}}>
+              <img src="/images/blake-race-action.jpg" alt="Blake Fisher racing at Snowshoe Bike Park" style={{width:'100%', height:'100%', objectFit:'cover', objectPosition:'center top', display:'block'}}/>
             </div>
             <div style={{position:'relative', width:'100%', aspectRatio:'4/3', overflow:'hidden'}}>
               <img src="/images/IMG_0965.jpg" alt="Blake Fisher — 1st place podium at Winter Park" style={{width:'100%', height:'100%', objectFit:'cover', objectPosition:'center 70%', display:'block'}}/>
