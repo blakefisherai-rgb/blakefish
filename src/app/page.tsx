@@ -30,7 +30,7 @@ export default function Home() {
           <p style={{fontSize:'16px', color:'rgba(255,255,255,0.6)', lineHeight:'1.75', maxWidth:'420px', marginBottom:'40px'}}>
             Business student, Eagle Scout, entrepreneur, investor, and outdoor athlete.
           </p>
-          <a href="#contact" style={{display:'inline-block', fontSize:'11px', fontWeight:'700', letterSpacing:'0.2em', textTransform:'uppercase', backgroundColor:'#C9A84C', color:'#0B1F3A', padding:'14px 32px', textDecoration:'none', marginRight:'16px'}}>Connect with Blake</a>
+          <a href="#contact" style={{display:'inline-block', fontSize:'11px', fontWeight:'700', letterSpacing:'0.2em', textTransform:'uppercase', backgroundColor:'#C9A84C', color:'#0B1F3A', padding:'14px 32px', textDecoration:'none', marginRight:'16px'}}>Connect with Me</a>
           <a href="#about" style={{display:'inline-block', fontSize:'11px', fontWeight:'700', letterSpacing:'0.2em', textTransform:'uppercase', border:'1px solid rgba(255,255,255,0.2)', color:'rgba(255,255,255,0.5)', padding:'14px 32px', textDecoration:'none'}}>Learn More</a>
         </div>
         <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
@@ -65,10 +65,10 @@ export default function Home() {
         </div>
         <div>
           {[
-            'Blake Fisher grew up in Grandview Heights, Ohio with a simple philosophy: if you want something done, own it from start to finish. A two-time state soccer champion and track athlete, he launched a bicycle repair business at 14 — building a client base through word of mouth before most kids had a resume.',
-            'His Eagle Scout project says everything about how he operates. Rather than taking the easy route, Blake spent four months planning and building an all-natural walking trail in Wyman Woods — doing everything from the design to the physical labor himself.',
-            'Now a sophomore at CU Boulder\'s Leeds School of Business, Blake is pursuing a BBA while competing in downhill and enduro mountain bike racing, charging big mountain lines on skis, and serving as Social Chairman of the Mountain Bike Club.',
-            'Beyond the mountains, Blake is building his foundation in real estate — learning the business from the inside through his family\'s multifamily portfolio. He\'s not waiting until after graduation to start.',
+            'I grew up in Grandview Heights, Ohio with a simple philosophy: if you want something done, own it from start to finish. A two-time state soccer champion and track athlete, I launched a bicycle repair business at 14 — building a client base through word of mouth before most kids had a resume.',
+            'My Eagle Scout project says everything about how I operate. Rather than taking the easy route, I spent four months planning and building an all-natural walking trail in Wyman Woods — doing everything from the design to the physical labor myself.',
+            'Now a sophomore at CU Boulder\'s Leeds School of Business, I\'m pursuing a BBA while competing in downhill and enduro mountain bike racing, charging big mountain lines on skis, and serving as Trip Planner of the Mountain Bike Club.',
+            'Beyond the mountains, I\'m building my foundation in real estate — learning the business from the inside through my family\'s multifamily portfolio. I\'m not waiting until after graduation to start.',
           ].map((p, i) => (
             <p key={i} style={{fontSize:'16px', color:'rgba(255,255,255,0.6)', lineHeight:'1.85', marginBottom:'20px'}}>{p}</p>
           ))}
@@ -115,7 +115,7 @@ export default function Home() {
                 'Managed an independent daily route of ~10 residential and commercial pools across the Columbus, OH area.',
                 'Conducted chemical testing and analysis using PoolBrain software; made on-site treatment decisions based on water chemistry and equipment condition.',
                 'Operated company vehicles solo and maintained accurate service records across all stops.',
-                'Full-time hours with minimal oversight — responsible for my own schedule and completing all work to standard.',
+                'Full-time hours with minimal oversight — responsible for completing all work independently and on schedule.',
               ],
             },
             {
